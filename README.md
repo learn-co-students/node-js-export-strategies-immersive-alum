@@ -67,7 +67,7 @@ Erm, wait a sec. Did you just get an error? `TypeError: Lamp is not a function`?
 Turns out, we didn't export anything from `lamp.js`. If we want to make a class available elsewhere, we need to tell Node.js explicitly what we're exporting from the file. We do this by modifying `module.exports`. Since we want to export the entire `Lamp` constructor in `lamp.js`, we can add the following to the bottom of the file:
 
 ```javascript
-module.exports = Lamp.js;
+module.exports = Lamp;
 ```
 
 Now, if we go back to `living_room.js`, and try to run our code again:
